@@ -1,0 +1,11 @@
+“name: Debug
+on:
+  pull_request:
+    types: [opened, synchronize, closed]
+jobs:
+  output-debug:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: YOUR_USERNAME/github-action-explore-debug@master
+        with:
+          jq_selector: ".pull_request”
