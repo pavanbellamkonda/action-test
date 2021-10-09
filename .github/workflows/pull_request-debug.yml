@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: pavanbellamkonda/github-action-explore-debug@main
         with:
-          jq_selector: .pull_request
+          args: .pull_request
